@@ -2,38 +2,49 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Container } from "react-bootstrap";
+import { Badge, Button, Container } from "react-bootstrap";
+import { banner } from "../assets";
+
 
 function SimpleSlider() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
   return (
     <Container>
-      <Slider {...settings}>
-        <div className="card-container">
-          <div >
-          
-          <img  src={require('../assets/materials/clothing-banner.jpg')}></img>
-          
+      <Slider>
+        <div>
+          <div style={{ backgroundImage: `url(${banner.Image})` }} className="banner-slide">
+            <div className="col-md-4">
+              <Badge className="bg-warning" text="dark">Free Shipping - Orders Over $100</Badge>
+              <h1>Free shipping on orders over <span className="text-danger">$100</span></h1>
+              <p>Free Shipping to first time customers only , after promotions and discount are applied.</p>
+              <Button>Shop Now</Button>
+            </div>
           </div>
+        </div>
+        <div>
+          <div style={{ backgroundImage: `url(${banner.Image})` }} className="banner-slide">
+            <div className="col-md-4">
+              <Badge className="bg-warning" text="dark">Free Shipping - Orders Over $100</Badge>
+              <h1>Free shipping on orders over <span className="text-danger">$100</span></h1>
+              <p>Free Shipping to first time customers only , after promotions and discount are applied.</p>
+              <Button>Shop Now</Button>
+            </div>
           </div>
-        <div className="card">
-        <img src={require('../assets/materials/clothing-banner.jpg')}></img>
         </div>
-        <div className="card">
-        <img src={require('../assets/materials/clothing-banner.jpg')}></img>
+        <div>
+          <div style={{ backgroundImage: `url(${banner.Image})` }} className="banner-slide">
+            <div className="col-md-4">
+              <Badge className="bg-warning" text="dark">Free Shipping - Orders Over $100</Badge>
+              <h1>Free shipping on orders over <span className="text-danger">$100</span></h1>
+              <p>Free Shipping to first time customers only , after promotions and discount are applied.</p>
+              <Button>Shop Now</Button>
+            </div>
+          </div>
         </div>
-        
       </Slider>
-      
+
     </Container>
-      
-    
+
+
   );
 }
 

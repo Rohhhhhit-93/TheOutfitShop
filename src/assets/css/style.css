@@ -95,11 +95,11 @@
     
 }
 
-img {
+/* img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 
 
@@ -107,4 +107,29 @@ img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.banner-slide {
+    min-height: 400px;
+    background-size:  cover;
+    margin-top: 20px;
+    border-radius: 8px;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.slick-dots {
+    bottom: 20px !important;
+}
+
+.slick-dots li button::before{
+    color: white !important;
+    opacity: 0.5 !important;
+}
+
+.slick-dots li.slick-active button::before{
+    opacity: 1 !important;
 }

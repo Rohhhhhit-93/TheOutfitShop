@@ -11,6 +11,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from './components/SimpleSlider';
+import ProductList from './components/ProductList';
 
 
 const root = ReactDOM.createRoot(
@@ -22,6 +23,7 @@ root.render(
     <Header />
     <Navbar />
     <SimpleSlider />
+    <ProductList />
     
     </React.StrictMode>
 );
