@@ -1,0 +1,110 @@
+.nav-links {
+    display: flex;
+    gap: 25px;
+    margin: 20px;
+    color: black;
+    
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+
+
+.nav-links:hover {
+    background-color: white;
+    color: grey;
+}
+
+.logo-img {
+    width: 50px;
+}
+
+.d-flex {
+    width: 500px;
+    
+}
+
+.carousel-items {
+    color: black;
+}
+
+.search-button {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.search-button:hover {
+    background-color: black;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+.user {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+
+.body-carousel {
+    margin: 5px;
+    padding: 100px;
+    width: 100%
+}
+
+.carousel-buttons {
+    color: white;
+    background-color: #243642;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.carousel-buttons:hover {
+    background-color: black;
+}
+
+.carousel-tag {
+    background-color:  #F3C623;
+    /* margin: 20px; */
+    padding: 1px;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    margin-inline-start: 10px;
+
+    line-height: 26px;
+    
+    
+}
+
+
+
+.row {
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-between; 
+    
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.carousel-slide {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
