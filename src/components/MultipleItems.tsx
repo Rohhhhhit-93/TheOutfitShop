@@ -24,49 +24,55 @@ function FocusOnSelect() {
     };
     return (
         <div className="slider-container">
-        <>
-            <Container>
-                <h3>FAST SELLING</h3>
+            <>
+                <Container>
+                    <section id="categories">
+                        <br></br>
+                        <br></br>
+                        <h3>Categories</h3>
+                        <hr></hr>
 
-                <Slider {...settings} >
+                        <Slider {...settings} >
 
-                    {
-                        data.length ?
-                            data.map((data: any) => (
-                                <div>
-                                    <div className="banner-slide">
-                                        <Card
-                                            style={{
-                                                width: '18rem'
-                                            }}
-                                        >
-                                            <img style={{ backgroundImage: `url(${banner.category})` }} className="banner-slide"></img>
-                                            
-                                            <Card.Body>
-                                                <Card.Title >
-                                                    {data.name}
-                                                </Card.Title>
-                                                <Card.Subtitle className="mb-2 text-muted">
-                                                    {data.type.slug}
-                                                </Card.Subtitle>
-                                                <Card.Text>
-                                                    {data.null}
-                                                </Card.Text>
-                                                <Button>
-                                                    Buy Now
-                                                </Button>
-                                            </Card.Body>
-                                        </Card>
-                                    </div>
-                                </div>
-                            ))
-                            : null
-                    }
-                </Slider>
-            </Container>
-        </>
+                            {
+                                data.length ?
+                                    data.map((data: any) => (
+                                        <div>
+                                            <div className="banner-slide">
+                                                <Card
+                                                    style={{
+                                                        width: '18rem'
+                                                    }}
+                                                >
+                                                    <img style={{ backgroundImage: `url(${banner.category})` }} className="banner-slide"></img>
 
-         </div>
+                                                    <Card.Body>
+                                                        <Card.Title >
+                                                            {data.name}
+                                                        </Card.Title>
+                                                        <Card.Subtitle className="mb-2 text-muted">
+                                                            {data.type.slug}
+                                                        </Card.Subtitle>
+                                                        <Card.Text>
+                                                            {data.null}
+                                                        </Card.Text>
+                                                        <Button>
+                                                            Buy Now
+                                                        </Button>
+                                                    </Card.Body>
+                                                </Card>
+                                            </div>
+                                        </div>
+                                    ))
+                                    : null
+                            }
+                        </Slider>
+                    </section>
+
+                </Container>
+            </>
+
+        </div>
     );
 }
 

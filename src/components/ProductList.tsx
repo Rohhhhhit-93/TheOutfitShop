@@ -16,34 +16,37 @@ export default function ProductList() {
     }, [])
     return (
         <>
-        <Container>
-            <Row>
-                
-                {
-                data.length ?
-                data.map((data: any) => (
-                <Col md={4} key={data.id}>
-                <Card>
-                <img
-                    alt='sample'
-                    src={data.image.original}
-                    />
-                    <Card.Body>
-                    <Card.Title>
-                    {data.name}
-                    </Card.Title>
-                    <Card.Text>
-                    {data.shop.thumbnail}
-                    </Card.Text>
-                    </Card.Body>
-                </Card>
-                </Col>
-                ))
-                : null
-                }
-            </Row>
-        </Container>
+            <Container>
+                <section id="products">
+                    <h3>Products</h3>
+                    <hr></hr>
+                    <Row>
+                        {
+                            data.length ?
+                                data.map((data: any) => (
+                                    <Col md={4} key={data.id}>
+                                        <Card>
+                                            <img
+                                                alt='sample'
+                                                src={data.image.original}
+                                            />
+                                            <Card.Body>
+                                                <Card.Title>
+                                                    {data.name}
+                                                </Card.Title>
+                                                <Card.Text>
+                                                    {data.shop.thumbnail}
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                ))
+                                : null
+                        }
+                    </Row>
+                </section>
+            </Container>
         </>
-        
+
     )
 }
