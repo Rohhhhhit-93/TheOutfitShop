@@ -95,11 +95,15 @@
     
 }
 
-/* .img {
-    width: 100%;
+.productlist {
+    width: 100%s;
     height: 100%;
     object-fit: cover;
-}  */
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    
+} 
 
 
 
@@ -133,4 +137,5 @@
 .slick-dots li.slick-active button::before{
     opacity: 1 !important;
 }
+
 

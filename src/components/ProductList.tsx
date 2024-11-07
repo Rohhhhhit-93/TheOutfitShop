@@ -20,13 +20,13 @@ export default function ProductList() {
                 <section id="products">
                     <h3>Products</h3>
                     <hr></hr>
-                    <Row>
+                    <Row >
                         {
                             data.length ?
                                 data.map((data: any) => (
                                     <Col md={4} key={data.id}>
-                                        <Card>
-                                            <img
+                                        <Card className="productlist">
+                                            <img className="productlist"
                                                 alt='sample'
                                                 src={data.image.original}
                                             />

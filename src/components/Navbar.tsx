@@ -1,8 +1,10 @@
+import { Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 
 function BasicExample() {
   return (
     <>
+    <Container>
     <Nav
       activeKey="/home"
       >
@@ -21,7 +23,9 @@ function BasicExample() {
       <Nav.Item >
         <Nav.Link className='nav-links' href='/contact'>Contact</Nav.Link>
       </Nav.Item>
-    </Nav></>
+    </Nav>
+    </Container>
+    </>
   );
 }
 

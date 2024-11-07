@@ -10,14 +10,10 @@ import { IoSearch } from "react-icons/io5";
 
 
 
-
-
-
-
-
 function NavScrollExample() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary" >
+        <Container>
+            <Navbar expand="lg" className="bg-body-tertiary" >
             <Container fluid>
                 <img className='logo-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39hnuAkVj7SmsJ9yI5Bd7O40RS-6E9ghgTA&s'></img>
                 <Navbar.Brand href="#"> <b>TheOutfitShop</b></Navbar.Brand>
@@ -68,13 +64,10 @@ function NavScrollExample() {
           <FaShoppingCart /> 
            <FaUser />
            <FaHeart />
-
-           
-
            </div>
-            
-
-        </Navbar>
+            </Navbar>
+        </Container>
+        
     );
 }
 
