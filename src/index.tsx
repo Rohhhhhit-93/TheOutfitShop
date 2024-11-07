@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from './components/SimpleSlider';
 import ProductList from './components/ProductList';
+import MultipleItems from './components/MultipleItems';
 
 
 const root = ReactDOM.createRoot(
@@ -23,7 +24,9 @@ root.render(
     <Header />
     <Navbar />
     <SimpleSlider />
+    <MultipleItems />
     <ProductList />
+    
     
     </React.StrictMode>
 );

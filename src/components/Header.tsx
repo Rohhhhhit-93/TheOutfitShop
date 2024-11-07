@@ -29,15 +29,17 @@ function NavScrollExample() {
                         navbarScroll
                     >
                         <Form className="d-flex">
+                            
                             <Form.Control
                                 type="search"
                                 placeholder="Search"
                                 className="me-2"
                                 aria-label="Search"
+                                
                             />
                             {/* <Button className='search-button' variant="outline-success">Search</Button> */}
                             <IoSearch size={24}/>
-
+                            
 
                         </Form>
                     </Nav>

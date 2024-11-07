@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Card, CardTitle, Col, Container, Row } from 'react-bootstrap';
 
 
 export default function ProductList() {
@@ -11,12 +11,14 @@ export default function ProductList() {
             store: "clothing"
         }).then(res => {
             setData(res.data.data)
+            console.log(data)
         })
     }, [])
     return (
         <>
         <Container>
             <Row>
+                
                 {
                 data.length ?
                 data.map((data: any) => (

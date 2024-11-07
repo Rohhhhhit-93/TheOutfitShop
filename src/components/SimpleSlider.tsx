@@ -9,6 +9,7 @@ import { banner } from "../assets";
 function SimpleSlider() {
   return (
     <Container>
+      
       <Slider>
         <div>
           <div style={{ backgroundImage: `url(${banner.Image})` }} className="banner-slide">
