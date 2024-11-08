@@ -13,7 +13,8 @@ import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from './components/SimpleSlider';
 import ProductList from './components/ProductList';
 import MultipleItems from './components/MultipleItems';
-import Advertisement from './components/Advertisement';
+import Advertisement from './components/Sale';
+import Sale from './components/Sale';
 
 
 const root = ReactDOM.createRoot(
@@ -26,7 +27,7 @@ root.render(
     <Navbar />
     <SimpleSlider />
     <MultipleItems />
-    <Advertisement />
+    <Sale />
     <ProductList />
     
     

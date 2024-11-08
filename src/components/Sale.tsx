@@ -2,9 +2,10 @@ import React from 'react'
 import { Badge, Button, Card, Col, Container, Figure, Image, Row } from 'react-bootstrap'
 import { banner } from '../assets'
 
-export default function Advertisement() {
+export default function Sale() {
     return (
         <Container>
+            <section id="sale">
             <h3>Sale</h3>
             <hr></hr>
             <Row xs="2">
@@ -30,6 +31,8 @@ export default function Advertisement() {
                 </Col>
 
             </Row>
+            </section>
+            
             
             {/* <div className='offers-slide'>
                 <Figure>

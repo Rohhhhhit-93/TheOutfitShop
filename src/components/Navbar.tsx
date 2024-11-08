@@ -16,7 +16,7 @@ function BasicExample() {
             <Nav.Link className='nav-links' href='#categories'>Categories</Nav.Link>
           </Nav.Item>
           <Nav.Item >
-            <Nav.Link className='nav-links' href='/sale'>Sale</Nav.Link>
+            <Nav.Link className='nav-links' href='#sale'>Sale</Nav.Link>
           </Nav.Item>
           <Nav.Item >
             <Nav.Link className='nav-links' href='/contact'>Contact</Nav.Link>
