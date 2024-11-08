@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Card, CardTitle, Col, Container, Row } from 'react-bootstrap';
+import { Button, Card, CardSubtitle, CardTitle, Col, Container, Row } from 'react-bootstrap';
 
 
 export default function ProductList() {
@@ -8,7 +8,7 @@ export default function ProductList() {
 
     useEffect(() => {
         axios.post('https://ecom-shop-api.vercel.app/products', {
-            store: "clothing"
+            store : "clothing"
         }).then(res => {
             setData(res.data.data)
             console.log(data)
@@ -31,12 +31,26 @@ export default function ProductList() {
                                                 src={data.image.original}
                                             />
                                             <Card.Body>
+                                            <Card.Title>
+                                                    {data.categories.name}
+                                                </Card.Title>
                                                 <Card.Title>
                                                     {data.name}
                                                 </Card.Title>
                                                 <Card.Text>
-                                                    {data.shop.thumbnail}
+                                                    ${data.max_price}
                                                 </Card.Text>
+                                                <Card.Text>
+                                                   stock : {data.in_stock}
+                                                </Card.Text>
+                                                <Card.Text>
+                                                   s
+                                                </Card.Text>
+                                                <Card.Subtitle>
+                                                    {data.description}
+                                                </Card.Subtitle>
+                                                <br></br>
+                                                <Button>BUY</Button>
                                             </Card.Body>
                                         </Card>
                                     </Col>
