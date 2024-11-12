@@ -12,9 +12,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from './components/SimpleSlider';
 import ProductList from './components/ProductList';
-import MultipleItems from './components/MultipleItems';
+import MultipleItems from './components/Categories';
 import Advertisement from './components/Sale';
 import Sale from './components/Sale';
+import Footer from './components/Footer';
+import PaymentInterface from './components/PaymentInterface';
+import DeveloperInfo from './components/DeveloperInfo';
 
 
 const root = ReactDOM.createRoot(
@@ -29,6 +32,9 @@ root.render(
     <MultipleItems />
     <Sale />
     <ProductList />
+    <Footer />
+    <PaymentInterface />
+    <DeveloperInfo />
     
     
     </React.StrictMode>

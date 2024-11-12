@@ -8,6 +8,10 @@ import { FaUser } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { IoSearch } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
+import { TbBrandSnowflake } from "react-icons/tb";
+import { SiNike } from "react-icons/si";
+
+
 
 
 
@@ -17,7 +21,8 @@ function NavScrollExample() {
         <Container>
             <Navbar expand="lg" className="bg-body-tertiary" >
                 <Container fluid>
-                    <img className='logo-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39hnuAkVj7SmsJ9yI5Bd7O40RS-6E9ghgTA&s'></img>
+                    {/* <img className='logo-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39hnuAkVj7SmsJ9yI5Bd7O40RS-6E9ghgTA&s'></img> */}
+                    <SiNike className='logo-img' />
                     <Navbar.Brand href="#"> <b>TheOutfitShop</b></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
