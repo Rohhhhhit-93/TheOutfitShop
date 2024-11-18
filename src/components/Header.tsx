@@ -76,6 +76,7 @@ function NavScrollExample() {
                     <FaUser />
                     <FaHeart />
                 </div> */}
+                
             </Navbar>
         </Container>
 

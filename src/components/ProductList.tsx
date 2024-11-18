@@ -12,11 +12,15 @@ export default function ProductList() {
         }).then(res => {
             setData(res.data.data)
             console.log(data)
+            
         })
+        
     }, [])
+    
     return (
         <>
             <Container>
+                
                 <section id="products">
                     <h3>Products</h3>
                     <hr></hr>
@@ -44,13 +48,13 @@ export default function ProductList() {
                                                    stock : {data.in_stock}
                                                 </Card.Text>
                                                 <Card.Text>
-                                                   s
+                                                   
                                                 </Card.Text>
                                                 <Card.Subtitle>
                                                     {data.description}
                                                 </Card.Subtitle>
                                                 <br></br>
-                                                <Button>BUY</Button>
+                                                <Button>BUY NOW</Button>
                                             </Card.Body>
                                         </Card>
                                     </Col>

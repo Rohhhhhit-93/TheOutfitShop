@@ -12,12 +12,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SimpleSlider from './components/SimpleSlider';
 import ProductList from './components/ProductList';
-import MultipleItems from './components/Categories';
 import Advertisement from './components/Sale';
 import Sale from './components/Sale';
 import Footer from './components/Footer';
 import PaymentInterface from './components/PaymentInterface';
 import DeveloperInfo from './components/DeveloperInfo';
+import FocusOnSelect from './components/ProductCategory';
+// import FocusOnSelect from './components/MultipleItems';
 
 
 const root = ReactDOM.createRoot(
@@ -29,7 +30,7 @@ root.render(
     <Header />
     <Navbar />
     <SimpleSlider />
-    <MultipleItems />
+    <FocusOnSelect />
     <Sale />
     <ProductList />
     <Footer />

@@ -15,13 +15,38 @@ function FocusOnSelect() {
             console.log(data)
         })
     }, [])
+
     const settings = {
         focusOnSelect: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        speed: 500
+        speed: 500,
+        responsive: [
+            {
+                breakpoint: 1024, // Screen width <= 1024px
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 768, // Screen width <= 768px
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 480, // Screen width <= 480px
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+        ],
     };
+
     return (
         <div className="slider-container">
             <>
@@ -73,6 +98,7 @@ function FocusOnSelect() {
             </>
 
         </div>
+
     );
 }
 
