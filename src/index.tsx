@@ -16,28 +16,34 @@ import Advertisement from './components/Sale';
 import Sale from './components/Sale';
 import Footer from './components/Footer';
 import PaymentInterface from './components/PaymentInterface';
-import DeveloperInfo from './components/DeveloperInfo';
+
 import FocusOnSelect from './components/ProductCategory';
 // import FocusOnSelect from './components/MultipleItems';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/Buynow';
+import Categories from './components/Varieties';
 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
+  <BrowserRouter>
+    
     <Header />
     <Navbar />
     <SimpleSlider />
-    <FocusOnSelect />
+    <Categories />
     <Sale />
     <ProductList />
     <Footer />
     <PaymentInterface />
-    <DeveloperInfo />
+     
     
     
-    </React.StrictMode>
+    
+    
+    
+    </BrowserRouter>
 );
 

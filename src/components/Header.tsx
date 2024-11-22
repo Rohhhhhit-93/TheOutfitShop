@@ -18,7 +18,7 @@ import { SiNike } from "react-icons/si";
 
 function NavScrollExample() {
     return (
-        <Container>
+        <Container >
             <Navbar expand="lg" className="bg-body-tertiary" >
                 <Container fluid>
                     {/* <img className='logo-img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39hnuAkVj7SmsJ9yI5Bd7O40RS-6E9ghgTA&s'></img> */}
@@ -48,6 +48,7 @@ function NavScrollExample() {
                             
                             <div className='user'>
                                 <FaShoppingCart />
+                        
                                 <FaUser />
                                 <FaHeart />
                             </div>

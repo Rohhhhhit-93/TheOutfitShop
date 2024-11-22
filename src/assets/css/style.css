@@ -150,6 +150,7 @@
     /* padding: 20px; */
     
 }
+
 .banner-slide-sale {
     min-height: 200px;
     background-size:  cover;
@@ -180,6 +181,7 @@
     /* background-color:whitesmoke; */
     margin: 10px;
     height: 100px;
+    width: 85%;
 }
 
 .lowbanner-slide {
@@ -193,6 +195,7 @@
     /* align-items:center;  */
     /* object-fit: contain; */
     margin-left: 20px;
+    display: flex;
 }
 
 .pay-img{
@@ -213,4 +216,8 @@
 .text-align {
     text-align: center;
 }
-
+ 
+.footer2 {
+    padding-left: 500px;
+    font-size: 15px;
+}

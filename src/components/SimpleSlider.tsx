@@ -43,6 +43,7 @@ function SimpleSlider() {
           </div>
         </Slider>
       </section>
+      <hr></hr>
     </Container>
 
 

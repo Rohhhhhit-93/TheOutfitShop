@@ -18,7 +18,7 @@ export default function Footer() {
                         About Us
                     </h3>
                     <hr></hr>
-                    <Row xs="4">
+                    <Row xs="2">
                         <Col>
                             <SlClock className="footer-icons" />
 

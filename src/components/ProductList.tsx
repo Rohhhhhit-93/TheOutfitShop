@@ -1,6 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Button, Card, CardSubtitle, CardTitle, Col, Container, Row } from 'react-bootstrap';
+import { Badge, Button, Card, CardSubtitle, CardTitle, Col, Container, Row } from 'react-bootstrap';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Buynow';
+import Buynow from './Buynow';
+
 
 
 export default function ProductList() {
@@ -8,19 +12,19 @@ export default function ProductList() {
 
     useEffect(() => {
         axios.post('https://ecom-shop-api.vercel.app/products', {
-            store : "clothing"
+            store: "clothing"
         }).then(res => {
             setData(res.data.data)
             console.log(data)
-            
+
         })
-        
+
     }, [])
-    
+
     return (
         <>
             <Container>
-                
+
                 <section id="products">
                     <h3>Products</h3>
                     <hr></hr>
@@ -35,7 +39,7 @@ export default function ProductList() {
                                                 src={data.image.original}
                                             />
                                             <Card.Body>
-                                            <Card.Title>
+                                                <Card.Title>
                                                     {data.categories.name}
                                                 </Card.Title>
                                                 <Card.Title>
@@ -44,17 +48,20 @@ export default function ProductList() {
                                                 <Card.Text>
                                                     ${data.max_price}
                                                 </Card.Text>
+                                                <Badge color="warning" pill>Sale</Badge>
                                                 <Card.Text>
-                                                   stock : {data.in_stock}
+                                                    {/* unit : {data.in_stock} */}
                                                 </Card.Text>
                                                 <Card.Text>
-                                                   
+                                                       Total Review : {data.ratings}
                                                 </Card.Text>
                                                 <Card.Subtitle>
                                                     {data.description}
                                                 </Card.Subtitle>
                                                 <br></br>
-                                                <Button>BUY NOW</Button>
+                                                <Button variant="success">+ Add</Button>
+                                                
+                                                
                                             </Card.Body>
                                         </Card>
                                     </Col>
