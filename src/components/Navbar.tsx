@@ -1,12 +1,13 @@
-import { Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
+import { FaHeart, FaShoppingCart, FaUser } from 'react-icons/fa';
 
 function BasicExample() {
   return (
     <>
       <Container >
-        <Row>
-          <Nav activeKey="/home">
+        <Row xs={1}>
+          <Nav activeKey="/home" className=''>
             <Nav.Item >
               <Nav.Link className='nav-links' href="#home">Home</Nav.Link>
             </Nav.Item>

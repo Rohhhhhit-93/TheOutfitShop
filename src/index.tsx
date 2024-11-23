@@ -22,6 +22,7 @@ import FocusOnSelect from './components/ProductCategory';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Buynow';
 import Categories from './components/Varieties';
+import NavigationBar from './components/NavigationBar';
 
 
 const root = ReactDOM.createRoot(
@@ -30,8 +31,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     
-    <Header />
-    <Navbar />
+    {/* <Header /> */}
+    <NavigationBar />
+    {/* <Navbar />  */}
     <SimpleSlider />
     <Categories />
     <Sale />
