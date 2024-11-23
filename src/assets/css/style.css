@@ -328,7 +328,7 @@ body {
   /* testingggg productcard display */
 
   .productlist {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -343,5 +343,5 @@ body {
 .productlist img {
     max-height: 400px;
     object-fit: cover;
-    border-bottom: 5px solid #ddd;
+    border-bottom: 7px solid #ddd;
 }
