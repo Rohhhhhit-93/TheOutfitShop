@@ -2,8 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Badge, Button, Card, CardSubtitle, CardTitle, Col, Container, Row } from 'react-bootstrap';
 import { Route, Routes } from 'react-router-dom';
-import Home from './Buynow';
-import Buynow from './Buynow';
+
 
 
 
