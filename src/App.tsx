@@ -3,7 +3,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Buynow from './components/Buynow';
-import Productdetail from './components/Productdetail';
+import Productdetail from './components/ProductDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css';
 import "slick-carousel/slick/slick.css";

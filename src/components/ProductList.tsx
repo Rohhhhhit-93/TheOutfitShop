@@ -67,7 +67,7 @@ export default function ProductList() {
                                         </Card>
                                     </Col>
                                 ))
-                                : 'vinoth'
+                                : 'udith'
                         }
                     </Row>
                 </section>
