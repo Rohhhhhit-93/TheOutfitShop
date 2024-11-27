@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Badge, Button, Card, CardSubtitle, CardTitle, Col, Container, Row } from 'react-bootstrap';
-import { Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
 
 
 
@@ -58,14 +58,16 @@ export default function ProductList() {
                                                     {data.description}
                                                 </Card.Subtitle>
                                                 <br></br>
+                                                <Link to={`/products/${data.slug}`}>
                                                 <Button variant="success">+ Add</Button>
+                                                </Link>
                                                 
                                                 
                                             </Card.Body>
                                         </Card>
                                     </Col>
                                 ))
-                                : null
+                                : 'vinoth'
                         }
                     </Row>
                 </section>
