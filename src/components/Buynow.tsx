@@ -7,6 +7,8 @@ import Sale from "./Sale";
 import ProductList from "./ProductList";
 import Footer from "./Footer";
 import PaymentInterface from "./PaymentInterface";
+import App from "../App";
+import Wishlist from "./WishList";
 
 export default function Buynow() {
     return (
@@ -18,6 +20,7 @@ export default function Buynow() {
     <ProductList />
     <Footer />
     <PaymentInterface />
+
         </>
     );
 }

@@ -15,6 +15,7 @@ interface Product {
   image: {
     original: string;
   };
+  name: string;
 }
 
 const Productdetail: React.FC = () => {
@@ -53,33 +54,12 @@ const Productdetail: React.FC = () => {
                     <img src={data.image.original} alt="Men's Slim-Fit Denim Jacket" id="main-image" />
                   </div>
 
-                  {/* Thumbnails for changing the main image */}
-                  {/* <div className="image-thumbnails">
-                    <img
-                        src="images/jacket-front.jpg"
-                        alt="Front View"
-                        className="thumbnail"
-                        onClick={() => changeImage('images/jacket-front.jpg')}
-                    />
-                    <img
-                        src="images/jacket-back.jpg"
-                        alt="Back View"
-                        className="thumbnail"
-                        onClick={() => changeImage('images/jacket-back.jpg')}
-                    />
-                    <img
-                        src="images/jacket-side.jpg"
-                        alt="Side View"
-                        className="thumbnail"
-                        onClick={() => changeImage('images/jacket-side.jpg')}
-                    />
-                </div> */}
                 </div>
                       
                 <div className="product-details">
                 <h1>Clothing</h1>
                 <hr></hr>
-                  <h1>Men's Slim-Fit Denim Jacket</h1>
+                  <h1> {data.name}</h1>
                   <p className="price">
                     $79.99 <span className="discount">20% OFF</span>
                   </p>

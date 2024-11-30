@@ -67,11 +67,11 @@ export default function Sale() {
                 <Col md={6}>
                     <Card style={{ backgroundImage: `url(${banner.sale})`, backgroundSize:'contain',backgroundPosition:'right',backgroundRepeat:'no-repeat',height:'145px',width:'100%'}} className='twopart'>
                         <Card.Body>
-                            <Card.Title>Sweaters & Shirts</Card.Title>
+                            <Card.Title> Shirts</Card.Title>
                             <Card.Text>
                                 Get upto 30% off
                             </Card.Text>
-                            <Button variant="success">Shop Now</Button>
+                            <Button variant="success">Check In</Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -82,7 +82,7 @@ export default function Sale() {
                             <Card.Text>
                                 Get upto 25% off
                             </Card.Text>
-                            <Button variant="success">Shop Now</Button>
+                            <Button variant="success">Check In</Button>
                         </Card.Body>
                     </Card>
                 </Col>
