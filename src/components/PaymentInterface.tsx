@@ -9,39 +9,7 @@ import { LiaCopyrightSolid } from 'react-icons/lia';
 
 export default function PaymentInterface() {
   return (
-    // <Container>
-    //   <hr></hr>
-
-    //   <Col xs={5} sm={5} md={4} lg={2}>
-    //     <Row lg={2}>
-
-    //       <div className='footer-bar ' >
-    //         <h3 className='fs-6 mt-4'><b>Payment Partners</b></h3>
-    //         <img className='pay-img' src={require('../assets/materials/amazon-pay-icon.png')} />
-    //         <img className='pay-img' src={require('../assets/materials/american-express-icon.png')} />
-    //         <img className='pay-img' src={require('../assets/materials/master-card-icon.png')} />
-    //         <img className='pay-img' src={require('../assets/materials/visa-icon.png')} />
-    //         <img className='pay-img' src={require('../assets/materials/paypal-icon.png')} />
-
-    //         <h3 className="footer2"><b>Get theoutfitshop App</b></h3>
-    //         {/* <img style={{ backgroundImage: `url(${banner.playstore})` }} className="lowbanner-slide">
-    //             </img> */}
-    //         <IoLogoGooglePlaystore className="pay-img" />
-
-    //         {/* <img style={{ backgroundImage: `url(${banner.appstore})` }} className="lowbanner-slide">
-    //             </img> */}
-    //         <FaAppStoreIos className="pay-img" />
-    //       </div>
-    //       <hr></hr>
-    //       {/* <div className='text-align'>
-    //         <h6>
-    //         <LiaCopyrightSolid />
-    //         2024 - 2025 theoutfitshop eCommerce.All Rights Reserved.By Udith Developer.
-    //         </h6>
-    //     </div> */}
-    //     </Row>
-    //   </Col>
-
+  
 
 
 
